@@ -1,0 +1,23 @@
+{
+  "name": "qazando-automation",
+  "version": "1.0.0",
+  "description": "Projeto de testes automatizados qazando",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "ios": "PLATFORM=iOS APP='/Users/stefanini/Documents/projetos/Estudos/UdemyCodeceptjsAppium/appsqazando/qazandoapp.app' DEVICE='iPhone 11 Pro Max' VERSION=15.2 npx codeceptjs run --reporter mochawesome --steps",
+    "android": "PLATFORM=Android APP='/Users/stefanini/Documents/projetos/Estudos/UdemyCodeceptjsAppium/appsqazando/app-release.apk' DEVICE=android_device VERSION=13 PACKAGE=com.qazandoapp ACTIVITY=MainActivity npx codeceptjs run --reporter mochawesome --steps"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "codeceptjs": "^3.5.3",
+    "mochawesome": "^7.1.3",
+    "node-random-name": "^1.0.1",
+    "random-number": "^0.0.9",
+    "webdriverio": "^8.6.3"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
